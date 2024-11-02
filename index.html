@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>MathFans</title>
+        
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <h1>My Math Equations</h1>
+
+        <form>
+            <!--Textbox for equation -->
+            <label for="equationName">Equation: </label> 
+            <br><input type="text" id="equationName" name="equationName">
+            <br>
+
+            <!-- Textbox for subject -->
+            <label for = "subjectName">Subject: </label>
+            <br><input type="text" id="subjectName" name="subjectName">
+            <br>
+
+            <!-- Checkbox (if completed) -->
+            <label for="studied">Studied? </label>
+            <input type="checkbox" id="studied" name="studied" value="complete">
+            <br>
+
+            <!-- Submit button -->
+            <input type="button" id="addToTable" value="Add Entry">
+            <br>
+        </form>
+
+        <!-- For JS to reference (to make table)-->
+        <div id="myTable"></div>
+
+        <!-- I don't know what this is for.. maybe calling function -->
+        <div id="newEquation"></div>
+
+        <!--<input type="button" id="addToTable" value="Add Entry">-->
+
+    </body>
+</html>
